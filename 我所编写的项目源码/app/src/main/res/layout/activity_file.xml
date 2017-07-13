@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true"
+    android:background="#f7f7f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fiveaddone.shixun.FileActivity">
+    <include layout="@layout/title"
+        android:id="@+id/title"
+        />
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件分享"
+        android:textSize="20dp"
+        android:textColor="#2a8bde"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/file_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/title">
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_yuanjiao_searchview"
+            android:layout_margin="5dp"
+            android:iconifiedByDefault="true"
+            android:queryHint="请输入搜索内容"
+            android:id="@+id/searchView"
+            />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+

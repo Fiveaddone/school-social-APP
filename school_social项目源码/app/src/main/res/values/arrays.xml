@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="first_kind">
+        <item>---请选择第一大类---</item>
+        <item>书籍</item>
+        <item>数码产品</item>
+        <item>服装</item>
+        <item>其它</item>
+    </string-array>
+    <string-array name="second_kind">
+        <item>---请先选择第一大类---</item>
+    </string-array>
+    <string-array name="third_kind">
+        <item>---请先选择第一大类---</item>
+    </string-array>
+    <string-array name="time2">
+        <item>---请先选择开始时间---</item>
+    </string-array>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="#0000ff">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back"
+                android:paddingLeft="10dp"
+                android:onClick="back"
+                android:background="@drawable/select_image_bg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人信息"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/user_name_text"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户名："/>
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/school_text"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学校："/>
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/realname_text"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="真实姓名："/>
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/student_id_text"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学号："/>
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/sex_text"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="性别："/>
+    <Button
+        android:textSize="20sp"
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注销"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_shoucang"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="我的收藏" />
+        <item
+            android:id="@+id/my_goods"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="我的商品" />
+        <item
+            android:id="@+id/my_service"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="我的服务" />
+        <item
+            android:id="@+id/my_file"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="我的文件" />
+        <item
+            android:id="@+id/my_act"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="我的活动" />
+    </group>
+</menu>

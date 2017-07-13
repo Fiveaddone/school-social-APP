@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    tools:context="com.example.fiveaddone.shixun.FileInformationActivity">
+    <include layout="@layout/file_information_title"
+        android:id="@+id/title"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件"
+        android:textSize="20dp"
+        android:textColor="#2a8bde"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/file_title" />
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/pinglun_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="请输入评论内容"
+            android:background="#fff"
+            android:padding="5dp"
+            android:textSize="20sp"
+            app:bootstrapSize="lg"/>
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/pinglun_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:bootstrapSize="lg"
+            android:text="评论"
+            app:roundedCorners="false"
+            app:bootstrapBrand="primary"/>
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/huifu_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="回复"
+            app:bootstrapSize="lg"
+            android:visibility="gone"
+            app:roundedCorners="false"
+            app:bootstrapBrand="primary"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/bottom">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical|center_horizontal"
+                android:src="@drawable/file_background"
+                android:id="@+id/file_backgreound"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/docx"
+                android:layout_centerInParent="true"
+                android:id="@+id/file_type"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试.docx"
+                android:layout_alignParentBottom ="true"
+                android:gravity="center"
+                android:id="@+id/file_name"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1.8"
+            >
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_height="40dp"
+                android:text="下载文件(96.5MB)"
+                app:roundedCorners="true"
+                app:bootstrapSize="lg"
+                app:bootstrapBrand="primary"
+                android:id="@+id/file_load"/>
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="文件简介:123..."
+                android:id="@+id/file_describe"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d3d3d3"
+            />
+
+            <ListView
+                android:id="@+id/pinglunlist"
+                android:layout_width="match_parent"
+                android:layout_weight="1.8"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

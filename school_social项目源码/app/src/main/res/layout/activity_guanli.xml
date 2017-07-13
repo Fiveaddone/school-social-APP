@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_guanli"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.administrator.hd_app.guanli_Activity">
+    <TextView
+        android:id="@+id/guanli_text"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="#1E90FF"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="活动管理"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/framLayout2"
+        android:layout_below="@+id/guanli_text">
+    </FrameLayout>
+</RelativeLayout>

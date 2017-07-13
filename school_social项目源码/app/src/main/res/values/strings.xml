@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">木交</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="school">
+        <item>四川大学</item>
+    </string-array>
+    <string-array name="xinbie">
+        <item>♀</item>
+        <item>♂</item>
+    </string-array>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scso.school_social">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application
+        android:name="com.mob.MobApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="首页"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".ActivActivity">
+
+        </activity>
+        <activity android:name=".DealActivity">
+
+        </activity>
+        <activity android:name=".FileActivity">
+
+        </activity>
+        <activity android:name=".MarketActivity">
+
+        </activity>
+        <activity android:name=".ServiceActivity">
+
+        </activity>
+        <activity android:name=".AddcommodityActivity">
+
+        </activity>
+        <activity android:name=".ApplyserviceActivity">
+
+        </activity>
+        <activity android:name=".Goods_infoActivity">
+
+        </activity>
+        <activity android:name=".LiaotianActivity">
+
+        </activity>
+        <activity android:name=".PinglunActivity">
+
+        </activity>
+        <activity android:name=".ManagerActivity">
+
+        </activity>
+        <activity android:name=".FileCheck">
+
+        </activity>
+        <activity android:name=".ServerCheck">
+
+        </activity>
+        <activity android:name=".HdCheck">
+
+        </activity>
+        <activity android:name=".PowerCheck">
+
+        </activity>
+        <activity android:name=".FindPasswordActivity">
+
+        </activity>
+        <activity android:name=".FindPasswordActivity1">
+
+        </activity>
+        <activity android:name=".HelloActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".RegisterActivity">
+
+        </activity>
+        <activity android:name=".PersonalInformationActivity">
+
+        </activity>
+        <activity android:name=".cakan_Activity">
+
+        </activity>
+        <activity android:name=".fabu_Activity">
+
+        </activity>
+        <activity android:name=".guanli_Activity">
+
+        </activity>
+        <activity android:name=".Quanxian_Activity">
+
+        </activity>
+        <activity android:name=".Shezhi_Activity">
+
+        </activity>
+        <activity android:name=".Shouchang_Activity">
+
+        </activity>
+        <activity android:name=".PersonInfoActivity">
+
+        </activity>
+        <activity android:name=".Myservice_Activity">
+
+        </activity>
+        <activity android:name=".MygoodsActivity">
+
+        </activity>
+        <activity android:name=".FileInformationActivity">
+
+        </activity>
+
+
+        <activity android:name=".FileStoreManagerActivity">
+
+        </activity>
+        <activity android:name=".StoreFileActivity">
+
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+
+
+        <meta-data android:name="Mob-AppKey" android:value="1f0213264805d"/>
+        <meta-data android:name="Mob-AppSecret" android:value="692507bdb84ca4491b97ae6882d33362"/>
+    </application>
+
+
+
+</manifest>
